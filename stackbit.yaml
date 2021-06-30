@@ -1,0 +1,178 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+publishDir: public
+dataDir: src/data
+models:
+  about:
+    type: data
+    label: About
+    file: about.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: __comments
+          label: Comments
+        - type: string
+          name: title
+          label: Title
+        - type: string
+          name: description
+          label: Description
+        - type: string
+          name: text
+          label: Text
+        - type: string
+          name: subtitle
+          label: Subtitle
+        - type: image
+          name: name_icon
+          label: Name Icon
+        - type: image
+          name: title_icon
+          label: Title Icon
+        - type: image
+          name: mail_icon
+          label: Mail Icon
+        - type: image
+          name: twitter_icon
+          label: Twitter Icon
+        - type: list
+          name: team_members
+          label: Team Members
+          items:
+            type: object
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: string
+                name: title
+                label: Title
+              - type: string
+                name: email
+                label: Email
+              - type: string
+                name: twitter
+                label: Twitter
+              - type: image
+                name: image
+                label: Image
+  contact:
+    type: data
+    label: Contact
+    file: contact.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: __comments
+          label: Comments
+        - type: string
+          name: title
+          label: Title
+        - type: string
+          name: description
+          label: Description
+        - type: string
+          name: text
+          label: Text
+        - type: string
+          name: email
+          label: Email
+        - type: string
+          name: phone
+          label: Phone
+        - type: string
+          name: twitter
+          label: Twitter
+        - type: image
+          name: email_icon
+          label: Email Icon
+        - type: image
+          name: phone_icon
+          label: Phone Icon
+        - type: image
+          name: twitter_icon
+          label: Twitter Icon
+  index:
+    type: data
+    label: Index
+    file: index.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: __comments
+          label: Comments
+        - type: string
+          name: title
+          label: Title
+        - type: string
+          name: description
+          label: Description
+        - type: string
+          name: text
+          label: Text
+        - type: string
+          name: subtitle
+          label: Subtitle
+        - type: list
+          name: home_items
+          label: Home Items
+          items:
+            type: object
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: image
+                name: image
+                label: Image
+              - type: string
+                name: description
+                label: Description
+              - type: string
+                name: completed
+                label: Completed
+  work:
+    type: data
+    label: Work
+    file: work.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: __comments
+          label: Comments
+        - type: string
+          name: title
+          label: Title
+        - type: string
+          name: description
+          label: Description
+        - type: string
+          name: text
+          label: Text
+        - type: list
+          name: work_items
+          label: Work Items
+          items:
+            type: object
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: image
+                name: image
+                label: Image
+              - type: string
+                name: description
+                label: Description
+              - type: string
+                name: completed
+                label: Completed
